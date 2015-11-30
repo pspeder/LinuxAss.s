@@ -34,7 +34,7 @@ Some common traits of command line switches:
   command usage, commands and switches). Try, e.g., `git --help`
 
 ####pids
-`pid` stands for __P__rocess __ID__entification and is a unique
+`pid` stands for __P__ rocess __ID__ entification and is a unique
 number assigned to each running process. These can sometimes be
 stored in files, who, then, usually ends in `.pid`.
 
@@ -58,8 +58,9 @@ Assignments
 
   * EXTRA: There are still other ways of doing this - if you feel up for it,
           you _could_ write a script, which search the appropriate file in
-          /proc/*/ and returns the process ids of the ones matching the user.
-          This is advanced (and also redundant, since lsof does exactly this).
+          `/proc/*/` and returns the process ids of the ones matching the user.
+          This is advanced (and also redundant, since lsof does exactly this),
+          so purely an educational exercise.
 
 3. Write a shell script, that will search running processes for the command
    used to invoke them, and return said command along with it's pid.
@@ -71,6 +72,7 @@ Assignments
   1. Read the "definition"
   2. Determine how to find CWD for a given process (say, 3813 (randomly chosen))
   3. What problems could arise if one started a programme from a different location than the originally intended one?
+
   * HINT: If the author has used 'relative paths', such as:
           `path/to/some/executablecode.sh` inside the script,
           rather than, for instance:
