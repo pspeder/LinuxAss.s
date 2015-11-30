@@ -13,8 +13,7 @@ cases, thus, being able to search in man pages is of importance (you do that by
 typing `/` then your search term, and then press `<ENTER>`, when reading the
 man page).
 
-"command line switches"
------------------------
+####"command line switches"
 ...refers to the arguments that begin with '-', given to commands on the
 shell, e.g. the '-a' below:
 
@@ -34,6 +33,17 @@ Some common traits of command line switches:
   (they display a short help message, usually describing
   command usage, commands and switches). Try, e.g., `git --help`
 
+####pids
+`pid` stands for __P__rocess __ID__entification and is a unique
+number assigned to each running process. These can sometimes be
+stored in files, who, then, usually ends in `.pid`.
+
+N.B.: An application may or may not spawn multiple processes per instance,
+depending on their complexity (examples of mulitple process applications
+could include: threaded applications and applications that call external
+libraries). If you use `htop` you can get a tree view indicating which
+processes started which other processes.
+
 Assignments
 -----------
 1. Find out which processes are currently running the system.
@@ -43,8 +53,8 @@ Assignments
 2. Find out which ones where started by you (or by applications, your
    user has opened).
   * HINT: `ps` _can_ do this, but may not be the easiest solution here.
-  * HINT2: Try with `lsof`
-  * HINT3: Find out what `lsof -u` means
+  * HINT2: Try with `lsof`.
+  * HINT3: Find out what `lsof -u` means.
 
   * EXTRA: There are still other ways of doing this - if you feel up for it,
           you _could_ write a script, which search the appropriate file in
@@ -61,7 +71,6 @@ Assignments
   1. Read the "definition"
   2. Determine how to find CWD for a given process (say, 3813 (randomly chosen))
   3. What problems could arise if one started a programme from a different location than the originally intended one?
-
   * HINT: If the author has used 'relative paths', such as:
           `path/to/some/executablecode.sh` inside the script,
           rather than, for instance:
