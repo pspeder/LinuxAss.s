@@ -84,7 +84,11 @@ Assignments
 
 
 ###Whereto from here?
+For now the only other article that has been somewhat thoroughly typed is the
+article on the archlinux package manager [pacman](pacman/pacman.exercises.md)
+<!---
 I would suggest the [extended lsof article](lsof/lsof.exercises.md)
 and the [extended ps article](ps/ps.exercises.md), to better get to grips
 with those two tools.
+--->
 
