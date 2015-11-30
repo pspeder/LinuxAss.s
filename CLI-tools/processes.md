@@ -3,32 +3,32 @@ Processes, Opened files and user sessions
 This file intends to introduce some of the most common tools available when
 working with Linux system administration.
 An incomplete list of the applications you will/should use to solve these assignments:
-
-`who`
-`ps`
-`lsof`
-
+* `who`
+* `ps`
+* `lsof`
 ...some of these (namely, `ps` and `lsof`) are _beasts_ of commands - they both
-have a vast list of command line switches[1], and a plethora of use cases, thus,
-being able to search in man pages is of importance (you do that by typing / when
-reading the man page).
+have a vast list of command line switches (see below), and a plethora of use
+cases, thus, being able to search in man pages is of importance (you do that by
+typing `/` then your search term, and then press `<ENTER>`, when reading the
+man page).
 
-[1] "command line switches"
+"command line switches"
+-----------------------
+...refers to the arguments that begin with '-', given to commands on the
+shell, e.g. the '-a' below:
+    `ps -a`
 
-    ...refers to the arguments that begin with '-', given to commands on the
-    shell, e.g. the '-a' below:
-      `ps -a`
-    They are to be seen in contrast to command commands, such as "status" below:
-      `systemctl status`
+They are to be seen in contrast to command commands, such as "status" below:
+    `systemctl status`
 
-    Some common traits of command line switches:
-      * When only a single dash, it usually indicates 'single-letter switches'
-      * 'single-letter switches' can be grouped, as in: `ps -axu`, thus removing
-        some of the dashes.
-      * Most commands provide a `-h` and/or `--help` switch, whose purpose
-        should be clear from the context ;-)
-        (they display a short help message, usually describing
-        command usage, commands and switches). Try, e.g., `git --help`
+Some common traits of command line switches:
+  * When only a single dash, it usually indicates 'single-letter switches'
+  * 'single-letter switches' can be grouped, as in: `ps -axu`, thus removing
+    some of the dashes.
+  * Most commands provide a `-h` and/or `--help` switch, whose purpose
+    should be clear from the context ;-)
+    (they display a short help message, usually describing
+    command usage, commands and switches). Try, e.g., `git --help`
 
 Assignments
 -----------
