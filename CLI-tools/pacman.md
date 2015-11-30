@@ -17,11 +17,24 @@ common when using arch's package management system, `pacman`.
    * HINT3: the answer to the first hint is -Q
 3. Download a package through pacman, without installing it
 4. Inspect the package contents. Specifically, inspect the files `PKGBUILD` and
-   `install`, which define what happens, when pacman installs these packages.
+   `install`, which define what happens, when pacman installs this package.<br/>
+   `PKGBUILD` defines build process<br/>
+   `install` moves the files that result from the build to the correct paths
+   (notably, it moves (or symlinks) the executable to /usr/bin).
    * HINT: pacman packages end in (their file-extension is) ".xf.tar.gz" that is,
          they are actually 'just' so-called "tarballs," which can be extracted
          with standard tools (`man tar`).
 5. Install the inspected package
+   * HINT: it's done with the command `makepkg -sri` but what do those switches
+     do?
+   * TROUBESHOOTING HELP:
+    1. did you run `makepkg` as root? (it will tell you not to, if you did)<br/>
+        So, you know, ....__don't__.<br/>
+    2. did it complain about missing packages/dependencies?<br/>
+        Try installing those normally with `pacman`, if that fails: either 1)
+        read up on AUR (see below) or 2) delete the (still uninstalled) package
+        folder and downloaded package and choose another one (with fewer/other
+        dependencies).
 6. ADVANCED/UNNECESSARY/NICE-TO-HAVE:<br/>
    Read about the AUR (https://wiki.archlinux.org/index.php/Arch_User_Repository)
    and try to download+install a package from it (any package will do, since
