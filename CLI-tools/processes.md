@@ -14,12 +14,12 @@ typing `/` then your search term, and then press `<ENTER>`, when reading the
 man page).
 
 ####"command line switches"
-...refers to the arguments that begin with '-', given to commands on the
-shell, e.g. the '-a' below:
+...refers to the arguments that begin with `-`, given to commands on the
+shell, e.g. the `-a` below:
 
     ps -a
 
-They are to be seen in contrast to command commands, such as "status" in
+They are to be seen in contrast to command commands, such as `status` in
 the command:
 
     systemctl status
