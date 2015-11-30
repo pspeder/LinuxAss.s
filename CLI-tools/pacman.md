@@ -28,9 +28,9 @@ common when using arch's package management system, `pacman`.
    * HINT: it's done with the command `makepkg -sri` but what do those switches
      do?
    * TROUBESHOOTING HELP:
-    1. did you run `makepkg` as root? (it will tell you not to, if you did)<br/>
+    ** did you run `makepkg` as root? (it will tell you not to, if you did)<br/>
         So, you know, ....__don't__.<br/>
-    2. did it complain about missing packages/dependencies?<br/>
+    ** did it complain about missing packages/dependencies?<br/>
         Try installing those normally with `pacman`, if that fails: either 1)
         read up on AUR (see below) or 2) delete the (still uninstalled) package
         folder and downloaded package and choose another one (with fewer/other
