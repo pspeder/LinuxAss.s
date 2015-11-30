@@ -81,3 +81,10 @@ Assignments
 5. Determine how many virtual terminals (terminal emulator windows) your user
    has open.
   * HINT: use `who`
+
+
+###Whereto from here?
+I would suggest the [extended lsof article][lsof/lsof.exercises.md]
+and the [extended ps article][ps/ps.exercises.md], to better get to grips
+with those two tools.
+
