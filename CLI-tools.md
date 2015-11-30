@@ -1,4 +1,5 @@
-= CLI-tools
+CLI-tools
+=========
 CLI stands for Command Line Interface, thus, this folder describes some
 common applications that run inside a terminal (or terminal emulator).
 Most (if not all) of the applications described in this folder are available on
