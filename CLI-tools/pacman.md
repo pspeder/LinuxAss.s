@@ -36,7 +36,7 @@ common when using arch's package management system, `pacman`.
         folder and downloaded package and choose another one (with fewer/other
         dependencies).
 6. ADVANCED/UNNECESSARY/NICE-TO-HAVE:<br/>
-   Read about the AUR (https://wiki.archlinux.org/index.php/Arch_User_Repository)
+   Read about the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository)
    and try to download+install a package from it (any package will do, since
    you can always uninstall with your script from no. 1.).
    Beware that it is good customs to do no. 4 _WHENEVER_ installing packages
