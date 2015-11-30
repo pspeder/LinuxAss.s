@@ -6,6 +6,7 @@ An incomplete list of the applications you will/should use to solve these assign
 * `who`
 * `ps`
 * `lsof`
+
 ...some of these (namely, `ps` and `lsof`) are _beasts_ of commands - they both
 have a vast list of command line switches (see below), and a plethora of use
 cases, thus, being able to search in man pages is of importance (you do that by
@@ -16,9 +17,12 @@ man page).
 -----------------------
 ...refers to the arguments that begin with '-', given to commands on the
 shell, e.g. the '-a' below:
+
     `ps -a`
 
-They are to be seen in contrast to command commands, such as "status" below:
+They are to be seen in contrast to command commands, such as "status" in
+the command:
+
     `systemctl status`
 
 Some common traits of command line switches:
