@@ -84,7 +84,7 @@ Assignments
 
 
 ###Whereto from here?
-I would suggest the [extended lsof article][lsof/lsof.exercises.md]
-and the [extended ps article][ps/ps.exercises.md], to better get to grips
+I would suggest the [extended lsof article](lsof/lsof.exercises.md)
+and the [extended ps article](ps/ps.exercises.md), to better get to grips
 with those two tools.
 
