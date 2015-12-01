@@ -9,13 +9,13 @@ An incomplete list of the applications you will/should use to solve these assign
 
 ...some of these (namely, `ps` and `lsof`) are __beasts__ of commands - they both
 have a vast list of command line switches (see below), and a plethora of use
-cases, thus, being able to search in man pages is of importance (you do that by
+cases, thus, being able to search in `man` pages is of importance (you do that by
 typing `/` then your search term, and then press `<ENTER>`, when reading the
 `man`-page).
 
 You are advised to read the man page of all commands that are named here.
 Specifically, I would recommend reading the "options" and/or "switches" section(s)
-of said `man`-pages, as this is key to understanding the operation of such
+of said `man`-pages, as these are key to understanding the operation of such
 programmes.
 
 
