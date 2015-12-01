@@ -1,4 +1,4 @@
-####A note on command line options (a.k.a. switches or flags)
+#Command line options (a.k.a. switches or flags)
 When you type in a command at the "command line" (or more correctly: "...in a
 \*nix shell, such as bash"), often times, it will allow you to control the
 application's operation and output by what is known as switches or flags.
@@ -51,7 +51,7 @@ Please note that **I may not have been consistent with my use of these words**.
 Sorry 'bout dat.
 
 
-####pids
+#pids
 `pid` stands for __P__ rocess __ID__ entification and is a unique
 number assigned to each running process. These can sometimes be
 stored in files, who, then, usually ends in `.pid`.
