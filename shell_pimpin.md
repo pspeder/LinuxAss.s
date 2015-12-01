@@ -3,22 +3,37 @@ So, now that you're somewhat more confident in a terminal, let's shake up
 the shell a little.
 
 Please note that this is pretty much a `bash`-oriented guide, also this is
-one the areas in which zsh sets itself apart - it is somewhat more customizable
-one might say: I realise it not be a totally fair comparison, but `man bash`
-is ~7250 lines, against `man zshall`'s ~33500, which may not be a totally skewed
-picture... just saying :).
+an area in which zsh sets itself apart - zsh is somewhat more customizable
+one might say: I realise it might not be a totally fair comparison, but `man bash`
+is ~7250 lines, against `man zshall`'s ~33500, and I don't think that that
+picture is totally skewed. Hence, if reading and solving this, leaves you
+hungry for more shell customisations, I recommend zsh.
+
+##Frameworks
+There are various repositories out there, containing various scripts for
+use in customisation of your shell. These are beyond the focus of this article,
+and can also make your shell fell a little sluggish (which it shouldn't).
+
+However, often times a lot of good community effort has been put into these
+frameworks, and it can be worth your while to look through sources of such
+frameworks to copy specific functions or the likes to your own config.
 
 ##How and when the shell loads what files
-So you may have noticed those files in your home drive, all relating to
+So you may have noticed those files in your home dir, all relating to
 `bash` somehow. Those determine, what your terminal looks and feels like
 (what language applications should choose, preferred editor or browser,
-what information the "prompt" should show), also what programmes you are
-able to run and where programmes should look to find certain files they
-might need.
+what information the "prompt" should show), and also things as what
+programmes you are able to run and where programmes should look to find
+certain files they might need (in other words: your `environment variables`).
 
-The files are loaded in a specific order, which I think is explained well
-[here](https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html)
-and [here](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/)
+The files are loaded in a specific order, which I think is explained well on
+* GNU's own webpage (bash is developed by GNU):
+
+  https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html)
+* This wordpress blog I found, with detailed charts over a terminals startup
+  process:
+
+  https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/)
 
 N.B. If you did not read the above: beware, not all files are loaded for all
 shells environments you will meet.
