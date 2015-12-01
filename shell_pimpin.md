@@ -33,10 +33,10 @@ shells environments you will meet.
 
 2. Take a look at the available options in bash, and try changing some with
   a command like:
-
+```
     set -o dotglob  # allow files beginning with '.' to be returned in the
                     # results of path-name expansion (autocompletion e.g.)
-
+```
   ...remember that these setting will only apply to shell that you have typed
   the command, to make it permanent, add it to your `~/.bashrc`-file.
 
