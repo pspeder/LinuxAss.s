@@ -1,5 +1,4 @@
-Processes, Opened files and user sessions
-=========================================
+#Processes, Opened files and user sessions
 This file intends to introduce some of the most common tools available when
 working with Linux system administration.
 An incomplete list of the applications you will/should use to solve these assignments:
@@ -19,9 +18,15 @@ Specifically, I would recommend reading the "options" and/or "switches" section(
 of said `man`-pages, as these are key to understanding the operation of such
 programmes.
 
+###Purpose
+The purpose of these exercise is yo allow you to find out a solution on your own.
+The exercises does not specify which programmes you should use, rather, you are
+encouraged to solve them with as many different tools as possible. This will
+hopefully give you some intuition of which tool is right for the job in the
+future.
 
-Assignments
------------
+
+#Assignments
 1. Find out which processes are currently running the system.
   * HINT: This can be done in many ways.
   * HINT2: `ps` can _definately_ do this.
