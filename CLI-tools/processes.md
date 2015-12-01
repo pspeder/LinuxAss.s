@@ -11,27 +11,66 @@ An incomplete list of the applications you will/should use to solve these assign
 have a vast list of command line switches (see below), and a plethora of use
 cases, thus, being able to search in man pages is of importance (you do that by
 typing `/` then your search term, and then press `<ENTER>`, when reading the
-man page).
+`man`-page).
 
-####"command line switches"
-...refers to the arguments that begin with `-`, given to commands on the
-shell, e.g. the `-a` below:
+You are advised to read the man page of all commands that are named here.
+Specifically, I would recommend reading the "options" and/or "switches" section(s)
+of said `man`-pages, as this is key to understanding the operation of such
+programmes.
 
-    ps -a
 
-They are to be seen in contrast to command commands, such as `status` in
-the command:
+####A note on command line options (a.k.a. switches or flags)
+When you type in a command at the "command line" (or more correctly: "...in a
+\*nix shell, such as bash"), often times, it will allow you to control the
+application's operation and output by what is known as switches or flags.
+A typical example would be to get a short help message about an application's
+usage and main flags, which most programs offer:
+
+    cat --help
+
+You will likely experience that the syntax for these flags can differ.
+Sometimes you will get full, meaningful flags as the one above, however, other
+programmes will use single-letter flags as below:
+
+    lsof -h
+    lsof -?
+
+...or an combination hereof. Different developers have different reasons for
+using their respective syntax. Sometimes the longer names are used to provide
+an 'easy-to-remember' alternative to a single-letter switch:
+
+    vim -f          \# 'f' for foreground (i.e. don't fork to it's own process)
+    vim --nofork    \# does the same as above
+
+Yet, other times, it is to extend the number of possible switches
+
+    \# The '--progress' does not have a "short version"
+    rsync -avz --progress <srcpath> <destpath>
+    
+    \#(rsync is basically a 'cp/mv'-command that also does network transfers)
+
+The programme, lsof, simply has too many options for them to be defined solely
+with single-letter switches, even if it still heavily relies on the smaller
+amount of typing required by single-letter switches.
+Thus, the developers have extended the idea of such switches to utilise the
+`+`-sign in addition to `-`
+
+    \# lsof extends no. of possible switches by also utilising '+'
+    lsof +D /usr/bin
+
+Yet another alternate syntax is the idea of passing "commands" (sometimes:
+"modes") to your command:
 
     systemctl status
 
-Some common traits of command line switches:
-* When only a single dash, it usually indicates 'single-letter switches'
-* 'single-letter switches' can be grouped, as in: `ps -axu`, thus removing
-  some of the dashes.
-* Most commands provide a `-h` and/or `--help` switch, whose purpose
-  should be clear from the context ;-)
-  (they display a short help message, usually describing
-  command usage, commands and switches). Try, e.g., `git --help`
+...some programmes, though, do not differentiate between such "command line
+options," as witnessed by the `man`-page for `route`.
+
+    man route       \# See the "Options"-section
+
+Please note that **I may not have been consistent with my use of these words**.
+Sorry 'bout dat.
+
 
 ####pids
 `pid` stands for __P__ rocess __ID__ entification and is a unique
