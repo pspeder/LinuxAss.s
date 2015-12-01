@@ -8,7 +8,8 @@ An incomplete list of the applications you will/should use to solve these assign
 * `lsof`
 
 ...some of these (namely, `ps` and `lsof`) are __beasts__ of commands - they both
-have a vast list of command line switches (see below), and a plethora of use
+have a vast list of command line switches (see
+[general linux file](./general-linux.md)), and a plethora of use
 cases, thus, being able to search in `man` pages is of importance (you do that by
 typing `/` then your search term, and then press `<ENTER>`, when reading the
 `man`-page).
