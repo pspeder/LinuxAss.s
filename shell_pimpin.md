@@ -2,6 +2,12 @@
 So, now that you're somewhat more confident in a terminal, let's shake up
 the shell a little.
 
+Please note that this is pretty much a `bash`-oriented guide, also this is
+one the areas in which zsh sets itself apart - it is somewhat more customizable
+one might say: I realise it not be a totally fair comparison, but `man bash`
+is ~7250 lines, against `man zshall`'s ~33500, which may not be a totally skewed
+picture... just saying :).
+
 ##How and when the shell loads what files
 So you may have noticed those files in your home drive, all relating to
 `bash` somehow. Those determine, what your terminal looks and feels like
@@ -18,7 +24,20 @@ N.B. If you did not read the above: beware, not all files are loaded for all
 shells environments you will meet.
 
 ##Da Pimpin'
-1. Take a piece of paper and describe (with words and/or illustration) how
+1. Make a shell that looks like this:
+  ```
+  ehlm@hamstarch l:118 > █
+  ```
+  ...where:
+  * ehlm is coloured with your terminals green colour
+  * hamstarch is coloured with a colour of your own choosing
+  * `l` stands for line and corresponds to which line in your terminal
+    that you are currently about to enter.
+
+  Recommended reading:
+  * http://ss64.com/bash/syntax-prompt.html : a brief overview of shell customisation
+
+2. Take a piece of paper and describe (with words and/or illustration) how
   you would like your prompt to look.
 
   Specifically, you should consider some of the following:
@@ -28,10 +47,10 @@ shells environments you will meet.
   * maybe you want a 2-liner prompt, with room for displaying all sorts of
     things, including: mail count, battery level, network signal, date/time,
 
-  I would recommend that you read [this](http://ss64.com/bash/syntax-prompt.html)
-  for a brief overview of some already availble commands.
+  Recommended reading:
+  * http://www.caliban.org/bash/index.shtml : some (a few) sensible defaults
 
-2. Take a look at the available options in bash, and try changing some with
+3. Take a look at the available options in bash, and try changing some with
   a command like:
   ```
   set -o dotglob # allow files beginning with '.' to be returned in the
@@ -40,7 +59,6 @@ shells environments you will meet.
   ...remember that these setting will only apply to shell that you have typed
   the command, to make it permanent, add it to your `~/.bashrc`-file.
 
-3. I found [this link](http://www.caliban.org/bash/index.shtml) quite useful.
+5. Search the web for others' configs. Quite a lot of useful hacks out there.
 
-4. Search the web for others' configs. Quite a lot of useful hacks out there.
-
+6. Implement the prompt you designed in step 2.
