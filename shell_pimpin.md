@@ -36,7 +36,7 @@ The files are loaded in a specific order, which I think is explained well on
   https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/)
 
 N.B. If you did not read the above: beware, not all files are loaded for all
-shells environments you will meet.
+shell environments you will meet.
 
 ##Da Pimpin'
 1. Make a shell that looks like this:
