@@ -1,0 +1,107 @@
+Liste over ofte-brugte linux cli-værktøjer
+==========================================
+Denne (ej komplette) liste over cli-værktøjer til administration af et
+netværks-enabled linuxsystem, er ment som en oversigt til at finde et program,
+til at løse en specifik opgave. De opgaver, der ligger i dette repository, kan
+alle løses med et (eller flere) program(mer) fra denne liste.
+
+Det anbefales kraftigt, at slå deres man-page op, når du har fundet det program,
+du tror du skal bruge. Kig specielt på hvilke flag, kommandoen accepterer, og disses
+funktion - det er om ikke andet en rigtig fin evne, at kunne læse dem, da de er
+tilgængelig på alle systemer med det pågældende program installeret.
+
+
+Værktøjer til at arbejde med/filtrere tekst
+-------------------------------------------
+Disse værktøjer vil oftest blive brugt i kombination med nogle af de andre.
+* sed   : programmeringssprog, designet til at filtrere tekst (regex-agtigt sprog)
+* awk   : samme som ovenfor.
+*********
+Note om sed/awk - ekstremt store programmer, med høj indlæringskurve, men
+                  til gengæld ekstremt kraftfulde værktøjer
+                  - lær dem, hvis du har tid
+*********
+* head  : output øverste linjer fra et stykke tekst (fra fil eller output)
+* tail  : output nederste linjer fra en tekst.
+* wc    : wc står ikke for water closet, men word count
+* cut   : fjern sektioner fra hver linje af et output
+* sort  : sorter (linjerne i) et tekstoutput
+* column: put output i kolonner (hovedsagligt for overskuelighed)
+
+
+Generel Linuxadministration:
+----------------------------
+Programmerne her har til formål at bistå linux administration fra din shell.
+
+* pwd       : "Print..." stien til current/"...Working Directory"
+* uptime    : Vis hvor længe systemet har kørt
+* who       : Vis de brugere, der er logget ind
+* w         : Vis de brugere, der er logget ind, samt hvad de laver
+* top       : vis linux processer (opdateret i "real-time")
+*************
+Note om top: der findes flere udvidede udgaver, såsom htop, der gør det nemmere
+             at overskue outputtet.
+*************
+* ps        : Rapporter et stilstandsbillede af kørende processer
+* ls*       : Programmer der starter med "ls":
+  * lsof        : "LiSt Open Files" (lad ikke den korte beskrivelse narre dig
+                  - lsof er et ekstremt stort (men også brugbart) program).
+  * lsblk       : LiSt BLocK devices (permanente lagerenheder, fx (hard)diske
+                  og "spinning media," såsom CD'er).
+  * lsusb       : LiSt USB-tilsluttede devices (inkluderer internt-tilsluttede
+                  enheder, såsom visse web-kameraer og bluetooth-antenner).
+  * lspci       : LiSt PCI-tilsluttede devices (såsom netværks- og lydkort,
+                  skærme, m.m.).
+  * lscpu       : LiSt information omkring de(n) tilsluttede CPU.
+  * lsmod       : LiSt loadede kerneMODuler.
+  * lslogins    : LiSt _alle_ brugeres LOGINS, inkl. systembrugeres.
+  * ........    : Der er andre, men de ovenstående er de 'vigtigste'/mest brugbare.
+* free      : Vis hvor meget midlertidig hukommelse, der er ledigt, og hvor meget,
+              der er brugt (midlertidig hukommelse er fx RAM og SWAP-filer).
+* du        : estimer hvor meget plads filer optager
+* df        : Rapporter udnyttelse af pladsen på filsystemerne.
+* (u)mount  : monter (eller afnmount) et filesystem
+
+
+Linux netværksprogrammer:
+-------------------------
+Disse øverste programmer kommer ofte præinstallerede, som en del af styresystemet
+eller kernen.
+
+* ip        : vis og konfigurer systemets "routing, devices, policy routing and tunnels"
+* ping      : send et "ICMP ECHO_REQUEST" til netværksnoder.
+* arp       : manipuler den lokale arp cache.
+* ifconfig  : konfigurer netværkskort, eller vis info omkring dem
+* netstat   : NETwork STATistics (vis information omkring det tilsluttede
+              netværk (se `nmap` for en mere komplet løsning))
+* iptables  : Konfigurering af linuxkernens firewall
+* nftables  : ^ Samme. Ny udgave, der på et tidspunkt vil erstatte iptables.
+* tracepath/traceroute/tracert: Pandang til windows-værktøjet af samme navn
+
+De følgende programmer skal næsten altid installeres seperat, men er inkluderet
+pga. deres brugbarhed.
+
+* nmap      : Will discover just about anything about the connected (or other)
+              network(s). Kæmpe program.
+* tcpdump   : ~ wireshark i cli-form. "Fanger" (captures) netværkspakker.
+* whois     : DNS and reverse DNS lookup tool
+* nettop    : The network equivalent of top
+* (nslookup  : DNS lookup (kunne ikke finde denne på arch))
+* en netværksmanager: til at holde styr på dine netværksforbindelser (forskellige
+                      profiler til forskellige netværk, holde styr på kodeord
+                      til trådløse netværk etc.
+
+Troubleshooting-værktøjer:
+--------------------------
+Disse værktøjer bruges som oftest til at finde fejl i andre programmer.
+Vær opmærksom på at dette er _avancerede_ værktøjer, der gerne kræver stor
+baggrundsviden!
+
+* strace    : Følg systemkald og -signaler (`man syscall`)
+              N.B. : for at følge kald til eksterne biblioteker kan `ltrace` bruges.
+              N.B.2: Generelt hedder programmer, der kan følge diverse kald (inkl.
+                     kald over netværket) noget med trace (tænk traceroute)
+* gdb       : GNU Debugger - analyser eksekveringen af et program (kør programmet
+              "inde i" gdb for fx at se, hvad der får det til at crashe).
+              Kan også bruges til at analysere kompileret kode (hvis man kan læse
+              assembly)
