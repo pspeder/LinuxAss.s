@@ -9,4 +9,5 @@ other program. For instance:
 
     lsb_release -i | awk '\''{ print $NF }'\'
 
-...which will display which d
+...which will display which distribution of linux you are using (if the
+mentioned programmes are installed, that is).
