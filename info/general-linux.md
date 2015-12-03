@@ -25,7 +25,7 @@ Yet, other times, it is to extend the number of possible switches
 
     # The '--progress' does not have a "short version"
     rsync -avz --progress <srcpath> <destpath>
-    
+
     #(rsync is basically a 'cp/mv'-command that also does network transfers)
 
 The programme, lsof, simply has too many options for them to be defined solely
@@ -45,7 +45,7 @@ Yet another alternate syntax is the idea of passing "commands" (sometimes:
 ...some programmes, though, do not differentiate between such "command line
 options," as witnessed by the `man`-page for `route`.
 
-    man route       \# See the "Options"-section
+    man route       # See the "Options"-section
 
 Please note that **I may not have been consistent with my use of these words**.
 Sorry 'bout dat.

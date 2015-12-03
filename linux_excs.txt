@@ -1,0 +1,27 @@
+
+* Show all files that were opened by your user - even those that you did not
+  explicitly start yourself. You might want to write the output of the above
+  to a file for the next assignment.
+
+* Count the number of lines in the output of the command above.
+
+* Sort the file alphanumerically (as in the following order:
+  ABC1 ABc1 Abc1 abc1 1ABC 1ABc 1Abc 1abc)
+
+* Write a script, which, upon invocation, will create a folder (a), and
+  in that folder create 10 files (b0-9) (with a single line input).
+  The folder creation must be done with the following command (at a
+  location you decide):
+
+    mkdir -pv <folder-name/a>
+
+
+
+******************
+Hints:
+ 1. mkdir
+ 2. 
+
+
+
+* Write a script that suppresses the output a given command.
