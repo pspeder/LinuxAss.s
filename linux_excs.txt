@@ -13,15 +13,27 @@
   The folder creation must be done with the following command (at a
   location you decide):
 
-    mkdir -pv <folder-name/a>
+    mkdir -pv <folder-name>
 
+    `-p` for parents (will not fail on non-existing parent folders)
+    `-v` for verbose (spit out more output - to make the exercise harder)
 
+* Adapt your script from the previous exercise to silence all output.
 
-******************
-Hints:
- 1. mkdir
- 2. 
+  1. søgetermen `stdout redirection` vil finde de relevante resourcer
 
+* Adapt your script so that the user can input what text is put in the
+  files.
+
+* Allow different input for the 10 different files
+
+* Combining the exercises above, let your script
+  1. Take as input an integer, defining how many files should be created
+     and verify that the input is indeed an integer.
+     Hint: You might wanna store that number in a variable
+  2. Take as input a string, to let the user chose where to store the folder
+     with the files in it, and ensure that the given string is path
+  3. 
 
 
 * Write a script that suppresses the output a given command.

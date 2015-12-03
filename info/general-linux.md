@@ -47,8 +47,11 @@ options," as witnessed by the `man`-page for `route`.
 
     man route       # See the "Options"-section
 
-Please note that **I may not have been consistent with my use of these words**.
-Sorry 'bout dat.
+The man page for `ps` puts three of these types of options into the following
+categories:
+* UNIX options  : single-dash, may be grouped (ex. `ps -aux`)
+* BSD options   : same as above, but no dashes (ex. `ps aux`)
+* GNU Long options: double-dash (no grouping, for obvious reasons; ex. `ps --help`)
 
 #pids
 `pid` stands for __P__ rocess __ID__ entification and is a unique
